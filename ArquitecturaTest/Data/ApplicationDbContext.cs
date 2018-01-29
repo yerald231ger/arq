@@ -21,6 +21,7 @@ namespace ArquitecturaTest.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            //se mapea la bd para saber que de que tabla cargar el DbSet
             modelBuilder.Entity<Alumno>().ToTable("Alumnos");
         }
     }
